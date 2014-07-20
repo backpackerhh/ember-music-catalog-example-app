@@ -6,6 +6,19 @@
     <link rel="stylesheet" type="text/css" href="js/libs/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body>
+    <script type="text/x-handlebars">
+      <div class="container">
+        <div class="page-header">
+          {{#link-to "index"}}
+            <h1>Music Catalog <small>with Ember.js</small></h1>
+          {{/link-to}}
+        </div>
+        <div class="row">
+          {{outlet}}
+        </div>
+      </div>
+    </script>
+
     <!-- Ember & other dependencies -->
     <script src="js/libs/jquery/dist/jquery.min.js"></script>
     <script src="js/libs/handlebars/handlebars.min.js"></script>
